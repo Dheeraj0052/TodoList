@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+android:padding="20dp"
+    android:orientation="vertical"
+    android:background="@drawable/background_main"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_log"
+            android:id="@+id/profileImage"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/profileImage"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile Name"
+                android:id="@+id/tvname"
+                android:textColor="#ffff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                />
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+
+               >
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Phone Number"
+                   android:textColor="#ffff"
+                   android:id="@+id/tvPhone"
+
+                   android:layout_marginLeft="2dp"
+                   />
+
+           </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d3d3d3"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rvMyDay"
+        android:layout_marginTop="30dp"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_myday"
+            android:tint="#ffff"
+            android:id="@+id/image1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Day"
+            android:layout_toEndOf="@+id/image1"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#ffff"
+            android:layout_marginLeft="20dp"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rvImportant"
+        android:layout_marginTop="15dp"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_important"
+            android:id="@+id/image2"
+            android:tint="#ffff"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Important"
+            android:layout_toEndOf="@+id/image2"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#ffff"
+            android:layout_marginLeft="20dp"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rvTask"
+        android:layout_marginTop="15dp"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_task"
+            android:tint="#ffff"
+            android:id="@+id/image3"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tasks"
+            android:layout_toEndOf="@+id/image3"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:textSize="20sp"
+
+            android:textColor="#ffff"
+            android:layout_marginLeft="20dp"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rvPlans"
+        android:layout_marginTop="15dp"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_plan"
+            android:id="@+id/image4"
+            android:tint="#ffff"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plans"
+            android:layout_toEndOf="@+id/image4"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#ffff"
+            android:layout_marginLeft="20dp"
+            />
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

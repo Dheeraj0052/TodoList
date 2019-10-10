@@ -1,18 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/background_main"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/r1"
+        >
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/icon_log"
+            android:id="@+id/logo"
+            />
+
+
+
+    </RelativeLayout>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_toEndOf="@id/logo"
+        android:text="Welcome to TO-DO :)"
+        android:id="@+id/tvMessage"
+        android:layout_marginLeft="15sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="50dp"
+        android:textColor="#ffffff"
+        android:layout_centerVertical="true"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="70dp"
+        android:textSize="30dp"
+        android:id="@+id/etName"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:id="@+id/etPhone"
+
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:id="@+id/ivNext"
+        android:background="@drawable/ic_navigate_next_black_24dp"
+        />
+
+
+
+
+</LinearLayout>
