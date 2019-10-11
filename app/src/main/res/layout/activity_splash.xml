@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#0191e5"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/iv"
+        app:civ_border_color="#ffffff"
+        app:civ_border_width="1dp"
+
+        android:layout_centerInParent="true"
+        android:src="@drawable/icon_log"
+
+        ></de.hdodenhof.circleimageview.CircleImageView>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="MY TODO :)"
+    android:textColor="#ffffff"
+    android:textSize="30dp"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/iv"
+
+    ></TextView>
+</RelativeLayout>

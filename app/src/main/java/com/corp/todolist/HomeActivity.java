@@ -39,19 +39,24 @@ public class HomeActivity extends AppCompatActivity  {
         rvTasks.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this, TasksActivity.class);
+                startActivity(intent);
 
             }
         });
         rvPlans.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this, PlansActivity.class);
+                startActivity(intent);
 
             }
         });
         rvImportant.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(HomeActivity.this, ImportantActivtiy.class);
+                startActivity(intent);
             }
         });
 
