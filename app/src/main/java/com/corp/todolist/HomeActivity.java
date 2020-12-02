@@ -11,13 +11,13 @@ import android.widget.TextView;
 
 public class HomeActivity extends AppCompatActivity  {
     String phone ,name;
-    TextView tvname,tvPhone;
+    TextView tvName,tvPhone;
     RelativeLayout rvMyday, rvImportant, rvTasks, rvPlans;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        tvname=findViewById(R.id.tvname);
+        tvName=findViewById(R.id.tvname);
         tvPhone=findViewById(R.id.tvPhone);
         rvMyday=findViewById(R.id.rvMyDay);
         rvImportant=findViewById(R.id.rvImportant);
@@ -27,7 +27,7 @@ public class HomeActivity extends AppCompatActivity  {
        phone= pref.getString("mobile","");
        name= pref.getString("name","");
        tvPhone.setText(phone);
-       tvname.setText(name);
+       tvName.setText(name);
        rvMyday.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
